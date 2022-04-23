@@ -1,0 +1,195 @@
+$lighter: 50%;
+* {margin: 0; padding: 0}
+body {
+    margin: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    #paper {
+        width: 100% !important;
+        background-color: yellow !important;
+    }
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, $lighter) 33%,rgba(255, 255, 255, $lighter) 33% 66%,rgba(0, 0, 255, $lighter) 33%);
+    margin-bottom: 3em;
+
+    .image {
+        width: 200px;
+        display: block;
+    }
+ 
+    .area-name {
+        border: 5px solid red;
+        margin: 0px;
+        flex-basis: 200px;
+        font-size: 42px;
+        padding: 10px;
+        padding-left: 30px;
+        font-style: italic;
+        font-variant: small-caps;
+        letter-spacing: 0.1em;
+        font-weight: 900;
+    }
+}
+
+#center-talk-div {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    margin-top: 39px;
+    justify-content: center;
+
+    h2 {
+        width: auto;
+        background-color: rgba(255, 255, 255, 95%);
+        font-family: lobster;
+        font-size: 38px;
+        text-transform: uppercase;
+        font-style: italic;
+        letter-spacing: 0.2em;
+        padding: 10px 40px 10px 40px;
+        text-align: center;
+    }
+}
+
+#paper {
+    width: 60%;
+    margin: auto;
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgba(212, 212, 212, 30%);
+    padding: 10px;
+
+    #area-pic {
+        display: inline-block;
+        width: 200px;
+        border: 5px solid red;
+        margin: 20px;
+        font-size: 32px;
+        padding: 20px;
+        font-style: italic;
+        font-variant: small-caps;
+        letter-spacing: 0.1em;
+        font-weight: 900;
+        background: linear-gradient(to bottom, rgba(255, 0, 0, $lighter) 33%,rgba(255, 255, 255, $lighter) 33% 66%,rgba(0, 0, 255, $lighter) 33%);
+    }
+
+
+    #title-container {
+        display: flex;
+        flex-direction: row;
+        #title {
+            justify-self: center;
+            align-self: center;
+            font-size: 32px;
+    
+        }
+    }
+    
+}
+
+#form-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 10px ridge rgba(0, 0, 255, $lighter);
+    border-style: double;
+
+    .place-holder {
+        margin: 20px;
+        font-size: 20px;
+        width: 40%;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #radioboxes {
+        // margin-left: 400px;
+        // margin-top: -55px;
+        border-left: 5px solid black;
+        border-right: 5px solid;
+        padding: 10px;
+        width: 80%;
+        label {
+            display: block;
+        }
+    }
+
+    legend {
+        font-size: 20px;
+        letter-spacing: 0.75px;
+        border: 4px solid rgba(0, 0, 255, $lighter);
+        font-weight: 500;
+        background: linear-gradient(to right, whitesmoke,rgba(255, 0, 0, $lighter));
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    select {
+        height: 30px;
+    }
+
+    #checkboxes {
+        width: 100%;
+        input {
+            margin-left: 20px;
+        }
+    }
+
+    #submit {
+        border: 3px solid black;
+        border-radius: 0px 10px 0px 10px;
+        transform: scale(1.1);
+    }
+    #submit:hover {
+        background: linear-gradient(to bottom, rgba(255, 0, 0, $lighter) 33%,rgba(255, 255, 255, $lighter) 33% 66%,rgba(0, 0, 255, $lighter) 33%);
+        box-shadow: 2px 2px 10px black;
+    }
+
+    textarea {
+        width: 70% !important;
+        margin: 0px !important;
+    }
+}
+
+
+footer {
+    width: 100%;
+
+    #bottom-words-h3 {
+        text-align: center;
+        font-family: lobster;
+        font-weight: 400;
+        margin: auto;
+        width: 75%;
+        padding-top: 70px;
+        font-size: 30px;
+        letter-spacing: 0.75px;
+    }
+
+    hr {
+        width: 60%;
+        margin: 40px auto 10px auto; //change this for help on the bottom of footer placement
+        height: 12px;
+        border: 4px solid black;
+        background: linear-gradient(to bottom, rgba(255, 0, 0, $lighter) 33%,rgba(255, 255, 255, $lighter) 33% 66%,rgba(0, 0, 255, $lighter) 33%);
+        transform: skewX(-20deg);
+    }
+    p {
+        width: 80%;
+        text-align: right;
+        padding-right: 40px;
+    }
+}

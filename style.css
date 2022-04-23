@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  #paper {
+    width: 100% !important;
+    background-color: yellow !important;
+  }
+}
+header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5) 33%, rgba(255, 255, 255, 0.5) 33% 66%, rgba(0, 0, 255, 0.5) 33%);
+  margin-bottom: 3em;
+}
+header .image {
+  width: 200px;
+  display: block;
+}
+header .area-name {
+  border: 5px solid red;
+  margin: 0px;
+  flex-basis: 200px;
+  font-size: 42px;
+  padding: 10px;
+  padding-left: 30px;
+  font-style: italic;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+}
+
+#center-talk-div {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  margin-top: 39px;
+  justify-content: center;
+}
+#center-talk-div h2 {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-family: lobster;
+  font-size: 38px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+}
+
+#paper {
+  width: 60%;
+  margin: auto;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px black;
+  background-color: rgba(212, 212, 212, 0.3);
+  padding: 10px;
+}
+#paper #area-pic {
+  display: inline-block;
+  width: 200px;
+  border: 5px solid red;
+  margin: 20px;
+  font-size: 32px;
+  padding: 20px;
+  font-style: italic;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5) 33%, rgba(255, 255, 255, 0.5) 33% 66%, rgba(0, 0, 255, 0.5) 33%);
+}
+#paper #title-container {
+  display: flex;
+  flex-direction: row;
+}
+#paper #title-container #title {
+  justify-self: center;
+  align-self: center;
+  font-size: 32px;
+}
+
+#form-div {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border: 10px ridge rgba(0, 0, 255, 0.5);
+  border-style: double;
+}
+#form-div .place-holder {
+  margin: 20px;
+  font-size: 20px;
+  width: 40%;
+}
+#form-div label {
+  font-size: 20px;
+}
+#form-div #radioboxes {
+  border-left: 5px solid black;
+  border-right: 5px solid;
+  padding: 10px;
+  width: 80%;
+}
+#form-div #radioboxes label {
+  display: block;
+}
+#form-div legend {
+  font-size: 20px;
+  letter-spacing: 0.75px;
+  border: 4px solid rgba(0, 0, 255, 0.5);
+  font-weight: 500;
+  background: linear-gradient(to right, whitesmoke, rgba(255, 0, 0, 0.5));
+  padding: 15px;
+  border-radius: 5px;
+}
+#form-div select {
+  height: 30px;
+}
+#form-div #checkboxes {
+  width: 100%;
+}
+#form-div #checkboxes input {
+  margin-left: 20px;
+}
+#form-div #submit {
+  border: 3px solid black;
+  border-radius: 0px 10px 0px 10px;
+  transform: scale(1.1);
+}
+#form-div #submit:hover {
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5) 33%, rgba(255, 255, 255, 0.5) 33% 66%, rgba(0, 0, 255, 0.5) 33%);
+  box-shadow: 2px 2px 10px black;
+}
+#form-div textarea {
+  width: 70% !important;
+  margin: 0px !important;
+}
+
+footer {
+  width: 100%;
+}
+footer #bottom-words-h3 {
+  text-align: center;
+  font-family: lobster;
+  font-weight: 400;
+  margin: auto;
+  width: 75%;
+  padding-top: 70px;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+}
+footer hr {
+  width: 60%;
+  margin: 40px auto 10px auto;
+  height: 12px;
+  border: 4px solid black;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5) 33%, rgba(255, 255, 255, 0.5) 33% 66%, rgba(0, 0, 255, 0.5) 33%);
+  transform: skewX(-20deg);
+}
+footer p {
+  width: 80%;
+  text-align: right;
+  padding-right: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Area Flights Booking</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="area-name">Area &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flights</h1>
+        <img class="image" src="/airplane.jpg" alt="Airplane photo flying into sunset">
+        <img class="image" src="/cloudy-airplane.jpg" alt="Airplane photo flying into sunset">
+        <img class="image" src="/Delta-airplane.jpg" alt="Airplane photo flying into sunset">
+        <img class="image" src="/red-plane.jpg" alt="Airplane photo flying into sunset">
+
+    <div id="center-talk-div">
+        <h2>It's time to fly...</h2>
+    </div>
+    </header>
+
+    <main id="paper">
+        
+        <div id="title-container">
+            <h1 id="area-pic">Area<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flights</h1>
+            <h1 id="title">Fill out this form to check for a seat on a flight</h2>
+            </div>
+        
+        <p id='description'>&nbsp;</p>
+
+        <form id="survey-form" action="#">
+        <fieldset id="form-div">
+                <legend id="description">This set requires personal information to make predictions on flight availability</legend>
+
+                <label id='name-label'><input class='place-holder' id="name" name="first" type="text" placeholder="Enter first-name" required>First:</label>
+
+                <label id='last-label'><input class='place-holder' name="last" type="text" placeholder="Enter last-name" required>Last:</label>
+
+                <label id='email-label'><input class='place-holder' id="email" name="email" type="email" placeholder="Enter email" required>Email:</label>
+                
+                <div id="radioboxes">
+                <label for="notify"><input id='notify' name="notify" type="radio" value="receive_email" checked>Recieve notifications about flight</label>
+                <label for="notify"><input id='notify' name="notify" type="radio" value="no_receive_email">Do not send me emails about my flight</label>
+                </div>
+
+                <label for="date"><input class="place-holder" id="right-side" name="date" type="date">
+                <u>starting date</u>:</label>
+
+                <label for="date"><input class="place-holder" id="right-side" name="date" type="date">
+                <u>ending date</u>:</label>
+
+                <label id="number-label" for="number"><input class="place-holder" id="number" name="number" type="number" placeholder="(int.) 1-10" max="10" min="1">Passengers:</label>
+
+                <label for="dropdown">
+                    <select name="type-of-seating" id="dropdown" class="place-holder">
+                        <option value="first-class">First-Class</option>
+                        <option value="business-class">Business-Class</option>
+                        <option value="premium-economy">Premium-Economy</option>
+                        <option value="Economy" selected>Economy (basic)</option>
+                    </select>
+                    Seating type:
+                </label>
+
+
+                <label for="section-seating" class="place-holder" id="checkboxes">
+                    Section seating preference on plane:<br>
+                    <input name="section-seating" value="left" type="checkbox"> Left 
+                    <input name="section-seating" value="middle" type="checkbox"> Middle
+                    <input name="section-seating" value="middle" type="checkbox"> Right
+                </label>
+                
+                <label for="textarea">Additional Comments:<br>
+                    <textarea class="place-holder" rows="4" name="textarea" placeholder="Comments...."></textarea>
+                </label>
+
+            <input class='place-holder' id="submit" name="Submit" type="submit">
+        </fieldset>
+        </form>
+
+        <footer>
+        <h3 id="bottom-words-h3">This form does not confirm your flight. It only checks for availability. Thank you again for flying <em>Area Flights</em>. </h3>
+        <hr>
+        <p>&copy; Area Flights 2022</p>
+        <br><br>
+        </footer>
+
+    </main>
+    <br><br><br><br><br>
+
+
+
+</body>
+</html> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
